@@ -1,0 +1,126 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background: linear-gradient(145deg, #1e1e1e, #292929);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px #0e0e0e, -10px -10px 20px #2e2e2e;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #ff6f61;
+    animation: slideDown 1.2s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    color: #b3b3b3;
+}
+
+input {
+    padding: 0.9rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: #1f1f1f;
+    color: #fff;
+    box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #2e2e2e;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 8px #ff6f61;
+}
+
+button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    background: #ff6f61;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 10px #0e0e0e, -5px -5px 10px #2e2e2e;
+}
+
+button:hover {
+    background-color: #ff4c3b;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 111, 97, 0.6);
+}
+
+#results {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #4caf50;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#weight-guide {
+    margin-top: 2rem;
+    text-align: left;
+    padding: 1rem;
+    background: #1a1a1a;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    box-shadow: 5px 5px 10px #0e0e0e, -5px -5px 10px #2e2e2e;
+}
+
+#weight-guide h3 {
+    color: #ff6f61;
+    margin-bottom: 0.5rem;
+}
+
+#weight-guide p {
+    margin: 0.3rem 0;
+    color: #b3b3b3;
+}
